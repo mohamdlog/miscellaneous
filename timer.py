@@ -1,10 +1,8 @@
 import timeit
 
+mycode = '''
 
+'''
 
-def f():
-
-    
-
-
-print(timeit.timeit(lambda: f()))
+exec_time = timeit.timeit(stmt=mycode, number=100000) * 10**3
+print(f"The time of execution of above program is : {exec_time:.03f}ms")
